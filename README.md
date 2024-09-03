@@ -1,2 +1,2 @@
 # team-1
-Laser tag program
+team 1 laser tag program
