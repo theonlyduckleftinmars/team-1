@@ -1,15 +1,18 @@
-# team-1
-team 1 laser tag program
+# Team 1 Laser Tag Program
 
-github usernames to real names:
-Team 1 information (GitHub username, Trello)
-Brice Stegall: BriceStegall, bs0911
-Dorothy (Claire) Oliver: Claire258, claireoliver22
-Eduardo (Jose) Hernandez: theonlyduckleftinmars, edjh22
-Jackson Finger: JacksonFinger, jackson27814400
-Will Taylor: Will-Taylor08, wmt001
+## Team Members
+| GitHub Username                  | Real Name                | Trello Username   |
+|----------------------------------|-------------------------|-------------------|
+| Brice Stegall                    | Brice Stegall           | bs0911            |
+| Dorothy (Claire) Oliver          | Claire Oliver           | claireoliver22    |
+| Eduardo (Jose) Hernandez         | theonlyduckleftinmars   | edjh22            |
+| Jackson Finger                   | Jackson Finger          | jackson27814400    |
+| Will Taylor                      | Will Taylor             | wmt001            |
 
-To run application: 
-From the team-1 directory
-to make the run.bash executable -> chmod +x run.bash
-then by typing ./run.bash the program should start up
+## How to Run the Application
+1. From the `team-1` directory, make the `run.bash` executable:
+   ```bash
+   chmod +x run.bash
+2. Start the program by typing:
+   ```bash
+   ./run.bash
