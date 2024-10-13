@@ -7,9 +7,10 @@ import java.sql.PreparedStatement;
 import java.util.List;
 
 public class PlayerManager {
-    private static final String URL = "jdbc:postgresql://localhost:5432/lasertag";
-    private static final String USERNAME = "postgres";
-    private static final String PASSWORD = "1456";
+    private static final String URL = "jdbc:postgresql://localhost:5432/photon";
+    private static final String USERNAME = "student";
+    private static final String PASSWORD = "student";
+
 
     public void insertPlayers(List<Player> players) {
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD)) {
