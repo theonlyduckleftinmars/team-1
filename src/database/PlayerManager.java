@@ -9,9 +9,9 @@ import java.sql.SQLException;
 
 public class PlayerManager {
 
-    private static final String URL = "jdbc:postgresql://10.0.2.15:5432/photon";
+    private static final String URL = "jdbc:postgresql://localhost/photon?socketFactory=org.postgresql.core.SocketFactory";
     private static final String USERNAME = "student";
-    private static final String PASSWORD = "student";
+    private static final String PASSWORD = "";  // No password needed for peer authentication
 
     public void insertPlayer(Player player) {
         String sql = "INSERT INTO players (id, codename) VALUES (?, ?)";
