@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class PlayerManager {
 
-    private static final String URL = "jdbc:postgresql://localhost:5432/photon";
+    private static final String URL = "jdbc:postgresql://10.0.2.15:5432/photon";
     private static final String USERNAME = "student";
     private static final String PASSWORD = "student";
 
