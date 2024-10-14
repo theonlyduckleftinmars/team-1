@@ -1,4 +1,5 @@
 import view.PlayerEntryScreen;
+import view.SplashScreen;
 import network.*;
 
 public class Main {
