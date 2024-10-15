@@ -1,4 +1,4 @@
-# Team 1 Laser Tag Program
+# Team 1 Laser Tag Program - UARK
 
 ## Team Members
 | GitHub Username                  | Real Name                | Trello Username   |
