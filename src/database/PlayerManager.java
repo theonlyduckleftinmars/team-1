@@ -11,7 +11,7 @@ public class PlayerManager {
 
     private static final String URL = "jdbc:postgresql://localhost/photon?socketFactory=org.postgresql.core.SocketFactory";
     private static final String USERNAME = "student";
-    private static final String PASSWORD = "";  // No password needed for peer authentication
+    private static final String PASSWORD = "student";
 
     public void insertPlayer(Player player) {
         String sql = "INSERT INTO players (id, codename) VALUES (?, ?)";
