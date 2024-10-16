@@ -9,6 +9,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.util.List;
+import java.util.ArrayList;
+
 
 public class PlayerEntryScreen {
 
@@ -214,14 +217,25 @@ public class PlayerEntryScreen {
 
     private void submitPlayers() {
         PlayerManager playerManager = new PlayerManager();
+        List<Player> greenTeamPlayers = new ArrayList<>();
+        List<Player> redTeamPlayers = new ArrayList<>();
+
         for (int i = 0; i < NUM_PLAYERS; i++) {
             if (!greenTeamFields[i][0].getText().isEmpty()) {
-                playerManager.insertPlayer(new Player(Integer.parseInt(greenTeamFields[i][0].getText()), greenTeamFields[i][1].getText()));
+                Player greenPlayer = new Player(Integer.parseInt(greenTeamFields[i][0].getText()), greenTeamFields[i][1].getText());
+                greenTeamPlayers.add(greenPlayer);
+                playerManager.insertPlayer(greenPlayer);
             }
             if (!redTeamFields[i][0].getText().isEmpty()) {
-                playerManager.insertPlayer(new Player(Integer.parseInt(redTeamFields[i][0].getText()), redTeamFields[i][1].getText()));
+                Player redPlayer = new Player(Integer.parseInt(redTeamFields[i][0].getText()), redTeamFields[i][1].getText());
+                redTeamPlayers.add(redPlayer);
+                playerManager.insertPlayer(redPlayer);
             }
         }
+
         System.out.println("Players have been submitted to the database.");
+
+        PlayActionScreen playActionScreen = new PlayActionScreen(greenTeamPlayers, redTeamPlayers);
+        playActionScreen.display();
     }
 }
